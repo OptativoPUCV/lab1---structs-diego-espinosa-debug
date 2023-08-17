@@ -129,3 +129,9 @@ exercises.c:99:3: error: expected ‘(’ before ‘}’ token
       |   (
 Compilation failed
 6a4ab41
+Thu 17 Aug 2023 09:08:47 PM UTC: 
+ exercises.c | 12 ------------
+ 1 file changed, 12 deletions(-)
+ tests:  0|5
+total_score: 20/70
+e354942
