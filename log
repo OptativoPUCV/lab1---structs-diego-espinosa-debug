@@ -23,3 +23,14 @@ Thu 17 Aug 2023 08:32:56 PM UTC:
  tests:  0|7
 total_score: 0/70
 e01ad02
+Thu 17 Aug 2023 08:33:50 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:22:10: error: ‘mayor’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   22 |   return mayor;
+      |          ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1a470a0
