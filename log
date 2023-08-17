@@ -118,3 +118,14 @@ Thu 17 Aug 2023 09:04:18 PM UTC:
  tests:  0|5
 total_score: 20/70
 b92ad81
+Thu 17 Aug 2023 09:08:33 PM UTC: 
+ exercises.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:99:3: error: expected ‘(’ before ‘}’ token
+   99 |   }
+      |   ^
+      |   (
+Compilation failed
+6a4ab41
