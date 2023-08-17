@@ -1,1 +1,19 @@
 
+Thu 17 Aug 2023 08:32:36 PM UTC: 
+ exercises.c | 20 ++++++++++++++++++--
+ 1 file changed, 18 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:17:16: error: expected expression before ‘<’ token
+   17 |     if(arr[i]) < arr[i+1]){
+      |                ^
+exercises.c:17:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   17 |     if(arr[i]) < arr[i+1]){
+      |     ^~
+exercises.c:17:26: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   17 |     if(arr[i]) < arr[i+1]){
+      |                          ^
+exercises.c:17:26: error: expected statement before ‘)’ token
+cc1: all warnings being treated as errors
+Compilation failed
+e087989
