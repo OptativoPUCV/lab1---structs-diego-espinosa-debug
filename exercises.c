@@ -185,10 +185,10 @@ typedef struct {
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
                       int anioNacimiento, int anioPublicacion) 
 {
-  strcpy(Libro->titulo,titulo,sizeof(Libro->titulo));
+  strcpy(Libro->titulo,titulo);
   Libro->anioPublicacion = anioPublicacion;
   
-  strcpy(Libro->autor.nombre,nombreAutor,sizeof(Libro->autor.nombre));
+  strcpy(Libro->autor.nombre,nombreAutor);
   Libro->autor.anioNacimiento = anioNacimiento;
   
 }
