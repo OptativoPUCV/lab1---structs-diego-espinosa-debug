@@ -188,7 +188,7 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
   strncopy(Libro->titulo,titulo,sizeof(Libro->titulo));
   Libro->anioPublicacion = anioPublicacion;
   
-  snprintf(Libro->autor.nombre,nombreAutor ,sizeof(Autor->nombre));
+  strncopy(Libro->autor.nombre,nombreAutor,sizeof(Libro->autor.nombre));
   Libro->autor.anioNacimiento = anioNacimiento;
   
 }

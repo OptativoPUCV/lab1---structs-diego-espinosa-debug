@@ -540,3 +540,27 @@ exercises.c:192:8: error: expected identifier or ‘(’ before ‘->’ token
 cc1: all warnings being treated as errors
 Compilation failed
 eccbcb8
+Sat 19 Aug 2023 10:52:16 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:188:3: error: implicit declaration of function ‘strncopy’; did you mean ‘strncpy’? [-Werror=implicit-function-declaration]
+  188 |   strncopy(Libro->titulo,titulo,sizeof(Libro->titulo));
+      |   ^~~~~~~~
+      |   strncpy
+exercises.c:188:12: error: expected expression before ‘Libro’
+  188 |   strncopy(Libro->titulo,titulo,sizeof(Libro->titulo));
+      |            ^~~~~
+exercises.c:189:8: error: expected identifier or ‘(’ before ‘->’ token
+  189 |   Libro->anioPublicacion = anioPublicacion;
+      |        ^~
+exercises.c:191:12: error: expected expression before ‘Libro’
+  191 |   strncopy(Libro->autor.nombre,nombreAutor,sizeof(Libro->autor.nombre));
+      |            ^~~~~
+exercises.c:192:8: error: expected identifier or ‘(’ before ‘->’ token
+  192 |   Libro->autor.anioNacimiento = anioNacimiento;
+      |        ^~
+cc1: all warnings being treated as errors
+Compilation failed
+1043876
