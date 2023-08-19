@@ -394,3 +394,14 @@ Sat 19 Aug 2023 09:38:46 PM UTC:
  tests:  0|3
 total_score: 40/70
 b5d0741
+Sat 19 Aug 2023 09:55:32 PM UTC: 
+ exercises.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:118:24: error: ‘resultFinal’ undeclared (first use in this function)
+  118 |     for(int f = i; f < resultFinal - 1; f++)
+      |                        ^~~~~~~~~~~
+exercises.c:118:24: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+fdc78a2

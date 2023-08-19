@@ -113,6 +113,18 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
     contador++;
   }
 
+  for(int i = 0; i < sizeFinal - 1; i++)
+  {
+    for(int f = i; f < resultFinal - 1; f++)
+    {
+      if(result[f] < result[f + 1])
+      {
+        int aux = result[f];
+        result[f] = result[f + 1];
+        result[f + 1] = aux;
+      }
+    }
+  }
 }
 
 /*
