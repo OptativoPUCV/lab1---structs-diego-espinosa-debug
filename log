@@ -360,3 +360,19 @@ Sat 19 Aug 2023 09:20:44 PM UTC:
  tests:  0|4
 total_score: 30/70
 7cee6bb
+Sat 19 Aug 2023 09:24:09 PM UTC: 
+ exercises.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:80:21: error: expected ‘)’ before ‘{’ token
+   80 |     if(arr[i]%2 == 0
+      |       ~             ^
+      |                     )
+   81 |     {
+      |     ~                
+exercises.c:85:3: error: expected expression before ‘}’ token
+   85 |   }
+      |   ^
+Compilation failed
+16c75b7
