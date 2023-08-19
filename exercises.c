@@ -183,7 +183,15 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+                      int anioNacimiento, int anioPublicacion) 
+{
+  snprintf(Autor->nombre, sizeof(Autor->nombre), "%s", nombreAutor);
+  Autor->anioNacimiento = anioNacimiento;
+
+  snprintf(Libro->titulo,sizeof(Libro->titulo),"%s",titulo);
+  Libro->anioPublicacion = anioPublicacion;
+  
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
