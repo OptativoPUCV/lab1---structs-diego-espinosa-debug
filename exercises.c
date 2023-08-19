@@ -96,7 +96,24 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+                       int result[]) {
+  
+  int sizeFinal = size1 + size2;
+
+  for(int i = 0; i < size1; i++)
+  {
+    result[i] = arr1[i];  
+  }
+
+  int contador = 0;
+  
+  for(int i = size1; i < sizeFinal; i++)
+  {
+    result[i] = arr2[contador];
+    contador++;
+  }
+
+}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
