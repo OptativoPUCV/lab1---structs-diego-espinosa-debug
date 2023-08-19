@@ -216,3 +216,34 @@ Sat 19 Aug 2023 08:14:39 PM UTC:
  tests:  0|5
 total_score: 20/70
 751b0d8
+Sat 19 Aug 2023 08:21:23 PM UTC: 
+ exercises.c | 15 ++++++---------
+ 1 file changed, 6 insertions(+), 9 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:94:3: error: unknown type name ‘bool’
+   94 |   bool ascendente = true;
+      |   ^~~~
+exercises.c:6:1: note: ‘bool’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+    5 | #include <string.h>
+  +++ |+#include <stdbool.h>
+    6 | 
+exercises.c:94:21: error: ‘true’ undeclared (first use in this function)
+   94 |   bool ascendente = true;
+      |                     ^~~~
+exercises.c:94:21: note: ‘true’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+exercises.c:94:21: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:95:3: error: unknown type name ‘bool’
+   95 |   bool descendente = true;
+      |   ^~~~
+exercises.c:95:3: note: ‘bool’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+exercises.c:101:20: error: ‘false’ undeclared (first use in this function)
+  101 |       ascendente = false;
+      |                    ^~~~~
+exercises.c:101:20: note: ‘false’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+exercises.c:119:1: error: control reaches end of non-void function [-Werror=return-type]
+  119 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+df78826

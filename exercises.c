@@ -91,27 +91,24 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) { 
 
-  int ascendente = 0;
-  int descendente = 0;
+  bool ascendente = true;
+  bool descendente = true;
 
   for(int i = 0; i < size - 1; i++)
   {
     if(arr[i] > arr[i + 1])
     {
-      descendente++;
+      ascendente = false;
     }else if(arr[i] < arr[i + 1])
     {
-      ascendente++;
+      descendente = false;
     }
   }
 
-  printf("%i", descendente);
-  printf(" %i", ascendente);
-
-  if(ascendente == size)
+  if(ascendente == true)
   {
     return 1;
-  }else if(descendente == size)
+  }else if(descendente == true)
   {
     return -1;
   }else
