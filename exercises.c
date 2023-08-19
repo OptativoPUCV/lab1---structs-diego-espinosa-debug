@@ -98,18 +98,18 @@ int checkSorted(int arr[], int size) {
   {
     if(arr[i] >= arr[i + 1])
     {
-      descendente++;
+      descendente = 1;
     }else if(arr[i] <= arr[i + 1])
     {
-      ascendente++;
+      ascendente = 1;
     }
   }
   
 
-  if(ascendente == size - 1)
+  if(ascendente == 1)
   {
     return 1;
-  }else if(descendente == size - 1)
+  }else if(descendente == 1)
   {
     return -1;
   }else
