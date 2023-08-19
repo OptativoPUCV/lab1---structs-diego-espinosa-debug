@@ -105,9 +105,6 @@ int checkSorted(int arr[], int size) {
     }
   }
 
-  ascendente++;
-  descendente++;
-
   if(ascendente == size)
   {
     return 1;
