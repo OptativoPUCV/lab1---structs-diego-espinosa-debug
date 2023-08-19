@@ -69,13 +69,16 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     }
   }
   
+  for(int i = 0; i < *newSize; i++)
+  {
+    arr[i] = aux[*newSize];    
+  }
+  
+  arr = (int *) realloc(arr, (*newSize) * sizeof(int))
   
   
   
-  
-  
-  
-return NULL; 
+return arr; 
 }
 
 /*

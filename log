@@ -327,3 +327,24 @@ exercises.c:60:7: error: variable ‘aux’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 aa7059f
+Sat 19 Aug 2023 09:10:33 PM UTC: 
+ exercises.c | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:68:7: error: value computed is not used [-Werror=unused-value]
+   68 |       *newSize++;
+      |       ^~~~~~~~~~
+exercises.c:77:55: error: expected ‘;’ before ‘return’
+   77 |   arr = (int *) realloc(arr, (*newSize) * sizeof(int))
+      |                                                       ^
+      |                                                       ;
+......
+   81 | return arr;
+      | ~~~~~~                                                 
+exercises.c:82:1: error: control reaches end of non-void function [-Werror=return-type]
+   82 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+4729dd8
