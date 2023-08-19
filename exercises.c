@@ -77,7 +77,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
 
   for(int i = 0; i < size; i++)
   {
-    if(arr[i]%2 == 0
+    if(arr[i]%2 == 0)
     {
       nuevoArr[cantidadPares] = arr[i];
       cantidadPares++;
