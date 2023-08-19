@@ -93,7 +93,6 @@ int checkSorted(int arr[], int size) {
 
   int ascendente = 0;
   int descendente = 0;
-  int total = 0;
 
   for(int i = 0; i < size - 1; i++)
   {
@@ -104,16 +103,16 @@ int checkSorted(int arr[], int size) {
     {
       ascendente++;
     }
-    total++;
   }
-  printf("%i", size); 
-  printf("%i", descendente);
-  printf(" %i", ascendente);
+  
+  ascendente++;
+  descendente++;
+  
 
-  if(ascendente == total)
+  if(ascendente == size)
   {
     return 1;
-  }else if(descendente == total)
+  }else if(descendente == size)
   {
     return -1;
   }else
