@@ -185,11 +185,11 @@ typedef struct {
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
                       int anioNacimiento, int anioPublicacion) 
 {
-  snprintf(Libro->titulo,sizeof(Libro->titulo),"%s",titulo);
+  strncopy(Libro->titulo,titulo,sizeof(Libro->titulo));
   Libro->anioPublicacion = anioPublicacion;
   
-  snprintf(Autor->nombre, sizeof(Autor->nombre), "%s",nombreAutor);
-  Autor->anioNacimiento = anioNacimiento;
+  snprintf(Libro->autor.nombre,nombreAutor ,sizeof(Autor->nombre));
+  Libro->autor.anioNacimiento = anioNacimiento;
   
 }
 
