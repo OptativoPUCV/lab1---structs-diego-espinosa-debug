@@ -67,6 +67,11 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
     }
   }
 
+  int *nuevoArr =(int *) malloc(cantidadPares * sizeof(int));
+  if(nuevoArr == NULL)
+  {
+    return NULL;
+  }
   
 return arr; 
 }
