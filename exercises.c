@@ -219,10 +219,26 @@ Nodo *crearListaEnlazada(int arr[], int size) {
   primerNodo->numero = arr[0];
   primerNodo->siguiente = NULL;
 
+  Nodo *nodoActual = primerNodo;
+
+  for(int i = 1; i < size; i++)
+  {
+    Nodo *nuevoNodo = (Nodo *) malloc(sizeof(Nodo));
+    if(nuevoNodo == NULL)
+    {
+      return NULL;
+    }
+
+    nuevoNodo->numero = arr[i];
+    nuevoNodo->siguiente = NULL;
+
+    nodoActual->siguiente = nuevoNodo;
+    nodoActual = nuevoNodo;
+  }
   
   
   
   
   
-  return NULL; 
+  return primerNodo; 
 }
