@@ -98,17 +98,20 @@ int checkSorted(int arr[], int size) {
   {
     if(arr[i] > arr[i + 1])
     {
-      descendente = 1;
+      descendente++;
     }else if(arr[i] < arr[i + 1])
     {
-      ascendente = 1;
+      ascendente++;
     }
   }
+  printf("%i", size); 
+  printf("%i", descendente);
+  printf(" %i", ascendente);
 
-  if(ascendente == 1)
+  if(ascendente == size)
   {
     return 1;
-  }else if(descendente == 1)
+  }else if(descendente == size)
   {
     return -1;
   }else
