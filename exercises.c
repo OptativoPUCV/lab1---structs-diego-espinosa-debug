@@ -186,8 +186,8 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
                       int anioNacimiento, int anioPublicacion) 
 {
   strcpy(Libro->titulo,titulo);
-  strcpy(Libro->Autor.nombre,nombreAutor);
-  Libro->Autor.anioNacimiento = anioNacimiento;
+  strcpy(Libro->autor.nombre,nombreAutor);
+  Libro->autor.anioNacimiento = anioNacimiento;
   Libro->anioPublicacion = anioPublicacion;
   
 }
@@ -208,4 +208,21 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size) { 
+  
+  Nodo *primerNodo = (Nodo *) malloc(sizeof(Nodo));
+  if (primerNodo == NULL)
+  {
+    return NULL;
+  }
+
+  primerNodo->numero = arr[0];
+  primerNodo->siguiente = NULL;
+
+  
+  
+  
+  
+  
+  return NULL; 
+}
